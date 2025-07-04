@@ -1,0 +1,12 @@
+| Type          | Issue                                                   | Suggested Fix                        |
+| ------------- | ------------------------------------------------------- | ------------------------------------ |
+| Functional    | No re-prompt for duplicate ID                           | Add retry or validation              |
+| Functional    | `Book` class unused                                     | Use or remove                        |
+| Functional    | No check for empty title/author                         | Add input validation                 |
+| Functional    | No validation for negative quantity                     | Add quantity checks                  |
+| Design        | Input mixed with logic                                  | Separate concerns                    |
+| Enhancement   | No unit testing                                         | Add tests                            |
+| Enhancement   | No logging or error auditing                            | Add logging                          |
+| Enhancement   | ID is manually entered, not auto-generated              | Auto-increment ID or validate better |
+| SQL/DB Design | Use `TEXT` instead of `STRING` for SQLite compatibility | Change data type                     |
+| Code Quality  | No use of context managers for DB operations            | Consider `with` for DB operations    |
